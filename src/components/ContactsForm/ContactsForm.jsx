@@ -3,7 +3,7 @@ import { Field, Formik, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useId } from "react";
 import { useDispatch } from "react-redux";
-import { addContact } from "../../redux-temp/contactsOps";
+import { addContact } from "../../redux/contactsOps";
 import Button from "../Button/Button";
 
 const phoneRegExp = /^[0-9-]+$/;

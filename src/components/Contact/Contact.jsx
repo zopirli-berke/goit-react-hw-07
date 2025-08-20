@@ -1,7 +1,7 @@
 import css from "./Contact.module.scss";
 import { HiPhone, HiUser } from "react-icons/hi";
 import { FaTrash } from "react-icons/fa";
-import { deleteContact } from "../../redux-temp/contactsOps";
+import { deleteContact } from "../../redux/contactsOps";
 import { useDispatch } from "react-redux";
 import Button from "../Button/Button";
 
