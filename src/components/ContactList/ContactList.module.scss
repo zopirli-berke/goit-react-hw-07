@@ -1,0 +1,12 @@
+@use "../../styles/variables" as var;
+
+.contactBox {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}

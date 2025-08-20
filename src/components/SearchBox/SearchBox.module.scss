@@ -1,0 +1,38 @@
+@use "../../styles/variables" as var;
+
+.searchBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 400px;
+  margin: 0 auto 24px auto;
+  font-family: var.$main-font;
+
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var.$label-color;
+  }
+}
+
+.searchInput {
+  width: 400px;
+  padding: 14px 16px;
+  border: 1px solid var.$border-color;
+  border-radius: var.$border-radius;
+  font-size: 16px;
+  color: var.$text-color;
+  background-color: var.$field-bg-color;
+  transition: border-color var.$transition-speed,
+    box-shadow var.$transition-speed;
+
+  &::placeholder {
+    color: #aaa;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var.$primary-color;
+    box-shadow: 0 0 0 3px var.$focus-glow-color;
+  }
+}

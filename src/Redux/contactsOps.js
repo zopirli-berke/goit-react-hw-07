@@ -13,8 +13,8 @@ export const fetchContacts = createAsyncThunk(
 
 export const addContact = createAsyncThunk(
   "contacts/addContact",
-  (text, thunkAPI) => {
-    return handleAsyncThunk(axios.post("/contacts", { text }), thunkAPI);
+  (newContact, thunkAPI) => {
+    return handleAsyncThunk(axios.post("/contacts", newContact), thunkAPI);
   }
 );
 
