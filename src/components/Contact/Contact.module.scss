@@ -1,0 +1,53 @@
+@use "../../styles/variables" as var;
+
+.contactCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 400px;
+  background-color: var.$container-bg-color;
+  padding: 16px 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: var.$border-radius;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow var.$transition-speed, transform var.$transition-speed;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  p {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    font-family: var.$main-font;
+  }
+}
+
+.contactName {
+  font-size: 18px;
+  font-weight: 600;
+  color: var.$text-color;
+
+  svg {
+    color: var.$primary-color;
+  }
+}
+
+.contactNumber {
+  font-size: 16px;
+  color: var.$label-color;
+
+  svg {
+    color: var.$label-color;
+  }
+}
